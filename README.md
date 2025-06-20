@@ -3,10 +3,10 @@
 ##  Design Decisions
 1. Modular Agent Architecture
 Each agent is implemented as a standalone class with a focused responsibility:
-> SentimentAgent for tone classification
-> EntityExtractionAgent for company/ticker identification
-> ImpactPredictionAgent for market movement prediction
-> SummaryAgent for human-readable output
+- SentimentAgent for tone classification
+- EntityExtractionAgent for company/ticker identification
+- ImpactPredictionAgent for market movement prediction
+- SummaryAgent for human-readable output
 
 2. Typed Interfaces with Pydantic
 Inputs and outputs of all agents are defined using BaseModel from Pydantic, allowing structured validation and smooth handoffs between agents.
@@ -26,8 +26,4 @@ Evaluation logic is included directly in the main script to simplify testing. Al
 ## Prompt Iteration / Logic Refinement
 Although no actual prompt templates were used due to the environment, the agent logic was refined iteratively in the same spirit as prompt tuning. Below is a breakdown:
 
-## Agent	                       Iteration	               Changes Made
-SentimentAgent	              V1 → V2	      Added more nuanced financial keywords like "beats expectations" and "concern"
-EntityExtractionAgent	        V1 → V2	      Expanded static detection to include CureGen, ByteDance, and FirstState
-ImpactPredictionAgent	        V1 → V2	      Originally returned just the direction — added reason for explainability
-SummaryAgent	                V1 → V2	      Trimmed down output to match submission expectations (no sentiment/companies) 
+
