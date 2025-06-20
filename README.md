@@ -27,7 +27,7 @@ Evaluation logic is included directly in the main script to simplify testing. Al
 Although no actual prompt templates were used due to the environment, the agent logic was refined iteratively in the same spirit as prompt tuning. Below is a breakdown:
 
 ## Agent	                       Iteration	               Changes Made
-SentimentAgent	              V1 → V2	      Added more nuanced financial keywords like "beats                                              expectations" and "concern"
-EntityExtractionAgent	        V1 → V2	      Expanded static detection to include CureGen,                                                  ByteDance, and FirstState
-ImpactPredictionAgent	        V1 → V2	      Originally returned just the direction — added                                                 reason for explainability
-SummaryAgent	                V1 → V2	      Trimmed down output to match submission                                                        expectations (no sentiment/companies) 
+SentimentAgent	              V1 → V2	      Added more nuanced financial keywords like "beats expectations" and "concern"
+EntityExtractionAgent	        V1 → V2	      Expanded static detection to include CureGen, ByteDance, and FirstState
+ImpactPredictionAgent	        V1 → V2	      Originally returned just the direction — added reason for explainability
+SummaryAgent	                V1 → V2	      Trimmed down output to match submission expectations (no sentiment/companies) 
