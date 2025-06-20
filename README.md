@@ -23,7 +23,6 @@ The SummaryAgent uses f-strings to simulate prompt output, structured similarly 
 6. Inline Evaluation Framework
 Evaluation logic is included directly in the main script to simplify testing. All five articles from the case study are processed end-to-end to demonstrate system performance.
 
-## Prompt Iteration / Logic Refinement
-Although no actual prompt templates were used due to the environment, the agent logic was refined iteratively in the same spirit as prompt tuning. Below is a breakdown:
+
 
 
